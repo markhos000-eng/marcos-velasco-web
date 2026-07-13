@@ -1,180 +1,44 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WTJYJR229C"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-WTJYJR229C');
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Horror Contemporáneo: Noelia Castillo | Marcos Velasco</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #0d0d0d;
-            --text-color: #f2f2f2;
-            --accent-red: #8b0000; /* Un rojo sangre oscuro, solemne */
-            --body-font: 'Inter', sans-serif;
-            --title-font: 'Playfair Display', serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: var(--body-font);
-            margin: 0;
-            line-height: 1.8;
-            font-weight: 300;
-        }
-
-        .container {
-            max-width: 740px; /* Más estrecho para facilitar la lectura */
-            margin: 0 auto;
-            padding: 40px 20px 100px;
-        }
-
-        /* --- Volver al Inicio --- */
-        .back-link {
-            text-decoration: none;
-            color: var(--text-color);
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            opacity: 0.5;
-            transition: opacity 0.3s;
-            display: inline-block;
-            margin-bottom: 60px;
-        }
-
-        .back-link:hover { opacity: 1; color: var(--accent-red); }
-
-        /* --- Cabecera del Artículo --- */
-        .article-header { text-align: center; margin-bottom: 60px; }
-
-        .article-date {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--accent-red);
-            font-weight: 600;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        h1 {
-            font-family: var(--title-font);
-            font-size: clamp(2rem, 6vw, 3rem);
-            line-height: 1.2;
-            margin: 0 0 30px 0;
-            font-weight: 400;
-        }
-
-        /* --- Espacio para la foto de Noelia --- */
-        .photo-container {
-            width: 100%;
-            max-width: 400px;
-            margin: 0 auto 50px;
-            border: 1px solid #222;
-            padding: 10px;
-            background: #111;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-
-        .photo-placeholder {
-            width: 100%;
-            aspect-ratio: 3/4; /* Proporción de retrato */
-            background: linear-gradient(180deg, #1a1a1a, #000);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #444;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* --- Contenido del Texto --- */
-        .article-content p { margin-bottom: 25px; font-size: 1.1rem; opacity: 0.9; }
-
-        .article-content blockquote {
-            border-left: 3px solid var(--accent-red);
-            margin: 40px 0;
-            padding: 10px 0 10px 30px;
-            font-style: italic;
-            opacity: 0.7;
-            font-size: 1.05rem;
-        }
-
-        .final-quote {
-            font-family: var(--title-font);
-            font-size: 1.4rem;
-            text-align: center;
-            margin-top: 60px;
-            color: var(--accent-red);
-            font-style: italic;
-        }
-
-        .descansa { text-align: center; margin-top: 20px; opacity: 0.5; font-size: 0.9rem; }
-
-        /* --- Footer --- */
-        footer {
-            text-align: center;
-            margin-top: 100px;
-            padding-top: 40px;
-            border-top: 1px solid #222;
-            font-size: 0.8rem;
-            opacity: 0.4;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Horror Contemporáneo: Noelia Castillo | Marcos Velasco</title>
+  <meta name="description" content="Columna de opinión sobre el caso Noelia Castillo y la deshumanización del sistema contemporáneo.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    article { max-width: 680px; margin: 0 auto; text-align: left; }
+    .fecha { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+    .cita { font-style: italic; border-left: 3px solid var(--accent); padding-left: 1rem; margin: 1.5rem 0; color: var(--text-muted); }
+    .nota { background: rgba(255,255,255,0.1); padding: 1rem; border-radius: var(--radius); margin: 1.5rem 0; font-size: 0.95rem; }
+    .volver { display: inline-block; margin-bottom: 2rem; font-size: 0.9rem; }
+  </style>
 </head>
 <body>
-
-<div class="container">
-    <a href="/" class="back-link">&larr; Volver al Inicio</a>
-
+  <div class="container">
+    <a href="/" class="volver">← Volver al Inicio</a>
     <article>
-        <header class="article-header">
-            <span class="article-date">viernes, 27 de marzo de 2026</span>
-            <h1>EL HORROR CONTEMPORÁNEO: NOELIA CASTILLO, ASESINADA POR EL SISTEMA.</h1>
-        </header>
+      <p class="fecha">viernes, 27 de marzo de 2026</p>
+      <h1>EL HORROR CONTEMPORÁNEO: NOELIA CASTILLO, ASESINADA POR EL SISTEMA.</h1>
+      
+      <div class="cita">
+        Eutanasia. "La eutanasia (del latín euthanasia y griego antiguo /e??a?as?a/euthanasía/, «buena muerte», «muerte apacible». (Su antónimo es distanasia) es la intervención deliberada para poner fin a una vida que padece una o varias enfermedades sin perspectiva de cura".
+      </div>
 
-        <div class="photo-container">
-            <div class="photo-placeholder">
-                [ <div class="photo-container" style="text-align:center;">
-    <img src="noelia.jpg" alt="Noelia Castillo" style="width:100%; display:block; height:auto;">
-</div>]
-            </div>
-            </div>
+      <p>Este término, en semejante contexto formal, es un deplorable argumento para justificar lo que sucedió ayer tarde, que solo puede ser entendido como la expresión de una cosa: el horror contemporáneo.</p>
+      <p>Noelia es la muestra palpable de un sistema fallido, y una sociedad deshumanizada al extremo desde hace décadas. Un sistema creador de individuos que, desde la niñez, sufren de patologías mentales serias. Una sociedad individualista y medicalizada, plagada de familias disfuncionales, trabajos precarizados, entornos hostiles, conductas psicopáticas, sistemas brutales de competencia, seres deshumanizados, individuos convertidos en mercancía.</p>
+      <p>Este sistema fallido, esta sociedad psicopática, convirtió la vida de esta niña-mujer en un infierno; hasta tal punto que solo deseaba morir. ¿Cómo vivir en un infierno? No hicieron por ayudarla, sino que la abandonaron a su suerte de la manera más sencilla, la señalaron la puerta de salida y la animaron a traspasarla. Médicos, jueces, periodistas, ciudadanos. Todos ellos.</p>
+      
+      <div class="nota">
+        (Esto último me recuerda a esa falta de autonomía de la burocracia nazi, aquellos funcionarios que luego dijeron, para justificarse, "yo solo cumplía órdenes", como si uno no dispusiera de la capacidad de decidir cuando de la vida y la muerte de otros se trata, y tienes en tus manos ese poder, esa posibilidad. Lo peor es que creían a pies juntillas su propia justificación, carecían de esa mínima autonomía personal, habían perdido toda condición de individuo; no parecían ser conscientes de que estaban encarnando el mal puro).
+      </div>
 
-        <div class="article-content">
-            <p><strong>Eutanasia.</strong> "La eutanasia (del latín <em>euthanasia</em> y griego antiguo /e??a?as?a/<em>euthanasía</em>/, «buena muerte», «muerte apacible». (Su antónimo es distanasia) es la intervención deliberada para poner fin a una vida que padece una o varias enfermedades sin perspectiva de cura".</p>
-            
-            <p>Este término, en semejante contexto formal, es un deplorable argumento para justificar lo que sucedió ayer tarde, que solo puede ser entendido como la expresión de una cosa: el horror contemporáneo.</p>
-
-            <p>Noelia es la muestra palpable de un sistema fallido, y una sociedad deshumanizada al extremo desde hace décadas. Un sistema creador de individuos que, desde la niñez, sufren de patologías mentales serias. Una sociedad individualista y medicalizada, plagada de familias disfuncionales, trabajos precarizados, entornos hostiles, conductas psicopáticas, sistemas brutales de competencia, seres deshumanizados, individuos convertidos en mercancía.</p>
-
-            <p>Este sistema fallido, esta sociedad psicopática, convirtió la vida de esta niña-mujer en un infierno; hasta tal punto que solo deseaba morir. ¿Cómo vivir en un infierno? No hicieron por ayudarla, sino que la abandonaron a su suerte de la manera más sencilla, la señalaron la puerta de salida y la animaron a traspasarla. Médicos, jueces, periodistas, ciudadanos. Todos ellos.</p>
-
-            <blockquote>
-                (Esto último me recuerda a esa falta de autonomía de la burocracia nazi, aquellos funcionarios que luego dijeron, para justificarse, "yo solo cumplía órdenes", como si uno no dispusiera de la capacidad de decidir cuando de la vida y la muerte de otros se trata, y tienes en tus manos ese poder, esa posibilidad. Lo peor es que creían a pies juntillas su propia justificación, carecían de esa mínima autonomía personal, habían perdido toda condición de individuo; no parecían ser conscientes de que estaban encarnando el mal puro).
-            </blockquote>
-
-            <p>Noelia fue asesinada ayer tarde a sangre fría por una sociedad enferma y un sistema fallido. Fue delante de todo el mundo, con los medios de prensa adelantándolo en horario de <em>Prime Time</em>, como si de un partido de Champions League se tratara. Hoy no sale en la primera página de ningún periódico, no sale en la noticia principal de los noticiarios. No. Ahí siguen y seguirán apareciendo, como cada día, la política de siempre; no debemos olvidarlo, el entretenimiento de masas preferido.</p>
-
-            <p class="final-quote">Asco de mundo.</p>
-            <p class="descansa">Descansa en paz, Noelia.</p>
-        </div>
+      <p>Noelia fue asesinada ayer tarde a sangre fría por una sociedad enferma y un sistema fallido. Fue delante de todo el mundo, con los medios de prensa adelantándolo en horario de Prime Time, como si de un partido de Champions League se tratara. Hoy no sale en la primera página de ningún periódico, no sale en la noticia principal de los noticiarios. No. Ahí siguen y seguirán apareciendo, como cada día, la política de siempre; no debemos olvidarlo, el entretenimiento de masas preferido.</p>
+      <p>Asco de mundo.<br>Descansa en paz, Noelia.</p>
     </article>
-
     <footer>
-        &copy; 2026 Marcos Velasco. Columna de Opinión.
+      <p style="font-size: 0.85rem; color: var(--text-muted);">© 2026 Marcos Velasco. Columna de Opinión.</p>
     </footer>
-</div>
-
+  </div>
 </body>
 </html>
