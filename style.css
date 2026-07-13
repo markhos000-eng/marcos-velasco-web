@@ -1,11 +1,13 @@
 :root {
-  --bg: #f06d06;
-  --text: #ffffff;
-  --text-muted: rgba(255, 255, 255, 0.75);
-  --accent: #ffffff;
-  --spacing: 1.5rem;
-  --max-width: 720px;
+  /* Paleta "Sombras del Pensamiento" (Dark Editorial) */
+  --bg: #121212;         /* Gris muy oscuro, más elegante que el negro puro */
+  --card-bg: #1e1e1e;    /* Fondo para las tarjetas de novelas */
+  --text: #eaeaea;       /* Blanco roto, suave para la lectura */
+  --text-muted: #a0a0a0; /* Gris medio para textos secundarios */
+  --accent: #ffffff;     /* Blanco puro para resaltar */
+  --border: #333333;     /* Bordes sutiles */
   --radius: 8px;
+  --max-width: 720px;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -15,16 +17,16 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
-  padding: var(--spacing);
+  padding: 2rem 1.5rem;
   text-align: center;
 }
 
 a {
   color: var(--accent);
   text-decoration: none;
-  transition: opacity 0.2s, transform 0.2s;
+  transition: all 0.2s ease;
 }
-a:hover { opacity: 0.85; }
+a:hover { opacity: 0.8; }
 
 .container {
   max-width: var(--max-width);
@@ -32,93 +34,97 @@ a:hover { opacity: 0.85; }
   text-align: left;
 }
 
-header, footer {
-  padding: 2rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  margin-bottom: 2rem;
+/* Header y Navegación */
+header {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 3rem;
 }
-footer { 
-  border-top: 1px solid rgba(255, 255, 255, 0.2); 
-  border-bottom: none; 
+nav { text-align: center; }
+nav a { 
+  margin: 0 0.8rem; 
+  font-size: 0.95rem; 
+  color: var(--text-muted); 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+nav a:hover { color: var(--accent); }
+
+/* Tipografía */
+h1, h2, h3 { line-height: 1.2; margin-bottom: 1rem; color: var(--accent); }
+h1 { 
+  font-size: clamp(2.2rem, 6vw, 3.5rem); 
+  font-weight: 300; 
+  letter-spacing: -1px;
+  margin-bottom: 0.5rem;
+}
+h2 { 
+  font-size: 1.5rem; 
   margin-top: 3rem; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  font-weight: 400;
   text-align: center;
 }
+h3 { font-size: 1.3rem; font-weight: 500; }
 
-h1, h2, h3 { line-height: 1.2; margin-bottom: 1rem; }
-h1 { font-size: clamp(2rem, 6vw, 3.5rem); }
-h2 { font-size: 1.8rem; margin-top: 2.5rem; }
-h3 { font-size: 1.3rem; }
+p { margin-bottom: 1rem; color: var(--text-muted); }
 
-p { margin-bottom: 1rem; }
-
-/* Tarjetas de novelas */
+/* Tarjetas de Novelas */
 .novela-card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 1.5rem;
+  background: var(--card-bg);
+  padding: 2rem 1.5rem;
   border-radius: var(--radius);
   margin-bottom: 1.5rem;
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+  border: 1px solid var(--border);
 }
-.novela-card:hover { transform: translateY(-4px); }
+.novela-card:hover { 
+  transform: translateY(-4px); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  border-color: #555;
+}
 
 .novela-card img {
-  max-width: 160px;
+  max-width: 150px;
   border-radius: 4px;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.2rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
 
 /* Botones */
 .btn-comprar, .btn-leer {
   display: inline-block;
-  background: var(--accent);
-  color: var(--bg);
   padding: 0.6rem 1.2rem;
   border-radius: var(--radius);
-  font-weight: 600;
-  margin: 0.5rem 0.3rem;
-  transition: background 0.2s, color 0.2s, transform 0.2s;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: 0.4rem;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-.btn-comprar:hover, .btn-leer:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-.btn-leer {
-  background: transparent;
-  color: var(--accent);
-  border: 1px solid var(--accent);
-}
-.btn-leer:hover {
+
+.btn-comprar {
   background: var(--accent);
   color: var(--bg);
 }
+.btn-comprar:hover {
+  background: #d0d0d0;
+  transform: translateY(-2px);
+}
 
-/* Columna preview */
+.btn-leer {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-leer:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Sección Columna */
 .columna-preview {
-  margin-top: 2.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px dashed rgba(255, 255, 255, 0.4);
-}
-
-/* Contacto / Redes */
-.contacto {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  font-size: 1.4rem;
-}
-.contacto a:hover { transform: scale(1.15); opacity: 1; }
-
-/* Modo oscuro automático (respeta la configuración del dispositivo del lector) */
-@media (prefers-color-scheme: dark) {
-  :root { 
-    --bg: #121212; 
-    --text: #e0e0e0; 
-    --text-muted: rgba(255, 255, 255, 0.6); 
-  }
-  .novela-card { background: rgba(255, 255, 255, 0.05); }
-  .btn-leer { border-color: var(--text); color: var(--text); }
-  .btn-leer:hover { background: var(--text); color: var(--bg); }
-}
+  margin-top:
