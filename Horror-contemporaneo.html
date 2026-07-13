@@ -6,26 +6,22 @@
   <title>El Horror Contemporáneo: Noelia Castillo | Marcos Velasco</title>
   <meta name="description" content="Columna de opinión sobre el caso Noelia Castillo y la deshumanización del sistema contemporáneo.">
   
-  <!-- Estilos globales de la web -->
+  <!-- Vinculamos el CSS global (donde ya tienes el fondo oscuro) -->
   <link rel="stylesheet" href="style.css">
   
-  <!-- Fuente específica para lectura larga (Serifa elegante) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
-  
   <style>
-    /* Estilos específicos SOLO para este artículo */
+    /* Estilos específicos para esta columna */
     .article-container {
-      max-width: 680px; /* Ancho óptimo de lectura */
+      max-width: 700px;
       margin: 0 auto;
-      padding: 4rem 1.5rem;
+      padding: 3rem 1.5rem;
       text-align: left;
     }
     
-    .article-header { 
-      margin-bottom: 3.5rem; 
-      text-align: center; 
-      border-bottom: 1px solid var(--border);
+    .article-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--border, #333);
       padding-bottom: 2rem;
     }
     
@@ -33,85 +29,89 @@
       font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 2px;
-      color: var(--text-muted);
+      color: var(--text-muted, #a0a0a0);
       margin-bottom: 1rem;
       display: block;
-      font-family: system-ui, sans-serif;
     }
     
     .article-title {
-      font-family: 'Merriweather', serif;
-      font-size: clamp(1.6rem, 5vw, 2.2rem);
-      line-height: 1.3;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      line-height: 1.2;
       margin: 0;
       font-weight: 700;
-      color: var(--accent);
+      color: var(--text, #fff);
+    }
+    
+    /* Foto de Noelia */
+    .foto-noelia {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 4px;
+      margin: 2rem auto;
+      display: block;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
     }
     
     .article-body {
-      font-family: 'Merriweather', serif; /* Tipografía de libro */
+      font-family: system-ui, -apple-system, sans-serif; /* Volvemos a la fuente limpia */
       font-size: 1.1rem;
-      line-height: 1.9; /* Mucho aire entre líneas para no cansar la vista */
-      color: #d4d4d4;
-    }
-    
-    .article-body p { margin-bottom: 2rem; }
-    
-    .cita-destacada {
-      font-style: italic;
-      border-left: 3px solid var(--accent);
-      padding-left: 1.5rem;
-      margin: 3rem 0;
-      color: var(--text);
-      font-size: 1.15rem;
       line-height: 1.7;
+      color: var(--text, #eaeaea);
     }
     
-    .nota-editorial {
-      background: rgba(255, 255, 255, 0.04);
-      border-left: 3px solid #666;
-      padding: 1.5rem 2rem;
-      margin: 3rem 0;
+    .article-body p { margin-bottom: 1.8rem; }
+    
+    /* Cita de Eutanasia */
+    .cita-eutanasia {
+      background: rgba(255,255,255,0.05);
+      padding: 1.5rem;
+      border-left: 4px solid var(--accent, #fff);
+      margin: 2rem 0;
       font-size: 1rem;
-      font-style: italic;
-      color: #b0b0b0;
-      border-radius: 0 8px 8px 0;
-      line-height: 1.8;
+      color: #ccc;
     }
     
-    .volver-arriba {
+    /* Nota sobre burocracia nazi */
+    .nota-nazi {
+      font-style: italic;
+      opacity: 0.85;
+      border-left: 2px solid #555;
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-size: 1rem;
+    }
+    
+    .volver {
       display: inline-block;
       margin-bottom: 2rem;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-family: system-ui, sans-serif;
+      color: var(--text-muted, #a0a0a0);
     }
-    
-    .footer-articulo {
-      text-align: center;
-      margin-top: 5rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border);
-      font-family: system-ui, sans-serif;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-    }
+    .volver:hover { color: var(--accent, #fff); }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="article-container">
-      <a href="/" class="volver-arriba">← Volver al Inicio</a>
+      <a href="/" class="volver">← Volver al Inicio</a>
       
       <header class="article-header">
         <span class="article-date">Viernes, 27 de marzo de 2026</span>
         <h1 class="article-title">El horror contemporáneo: Noelia Castillo, asesinada por el sistema</h1>
       </header>
 
+      <!-- AQUÍ VA LA FOTO DE NOELIA -->
+      <!-- Si tienes el enlace de la foto (postimg o similar), pégalo en src="" -->
+      <img src="https://i.postimg.cc/ZYqKqH1p/Noelia-Castillo-Ramos.jpg" alt="Noelia Castillo Ramos" class="foto-noelia">
+      <!-- NOTA: Si la imagen no carga, cambia el enlace de arriba por el que tú tengas -->
+
       <article class="article-body">
-        <div class="cita-destacada">
-          Eutanasia. "La eutanasia (del latín euthanasia y griego antiguo euthanasía, «buena muerte», «muerte apacible». Su antónimo es distanasia) es la intervención deliberada para poner fin a una vida que padece una o varias enfermedades sin perspectiva de cura".
+        
+        <div class="cita-eutanasia">
+          <strong>Eutanasia.</strong> "La eutanasia (del latín <em>euthanasia</em> y griego antiguo <em>εὐθανασία</em>, «buena muerte», «muerte apacible». Su antónimo es distanasia) es la intervención deliberada para poner fin a una vida que padece una o varias enfermedades sin perspectiva de cura".
         </div>
 
         <p>Este término, en semejante contexto formal, es un deplorable argumento para justificar lo que sucedió ayer tarde, que solo puede ser entendido como la expresión de una cosa: el horror contemporáneo.</p>
@@ -120,5 +120,19 @@
 
         <p>Este sistema fallido, esta sociedad psicopática, convirtió la vida de esta niña-mujer en un infierno; hasta tal punto que solo deseaba morir. ¿Cómo vivir en un infierno? No hicieron por ayudarla, sino que la abandonaron a su suerte de la manera más sencilla, la señalaron la puerta de salida y la animaron a traspasarla. Médicos, jueces, periodistas, ciudadanos. Todos ellos.</p>
 
-        <div class="nota-editorial">
-          (Esto último me
+        <div class="nota-nazi">
+          (Esto último me recuerda a esa falta de autonomía de la burocracia nazi, aquellos funcionarios que luego dijeron, para justificarse, "yo solo cumplía órdenes", como si uno no dispusiera de la capacidad de decidir cuando de la vida y la muerte de otros se trata, y tienes en tus manos ese poder, esa posibilidad. Lo peor es que creían a pies juntillas su propia justificación, carecían de esa mínima autonomía personal, habían perdido toda condición de individuo; no parecían ser conscientes de que estaban encarnando el mal puro).
+        </div>
+
+        <p>Noelia fue asesinada ayer tarde a sangre fría por una sociedad enferma y un sistema fallido. Fue delante de todo el mundo, con los medios de prensa adelantándolo en horario de Prime Time, como si de un partido de Champions League se tratara. Hoy no sale en la primera página de ningún periódico, no sale en la noticia principal de los noticiarios. No. Ahí siguen y seguirán apareciendo, como cada día, la política de siempre; no debemos olvidarlo, el entretenimiento de masas preferido.</p>
+
+        <p>Asco de mundo.<br>Descansa en paz, Noelia.</p>
+      </article>
+      
+      <footer style="text-align: center; margin-top: 4rem; opacity: 0.5; font-size: 0.8rem;">
+        © 2026 Marcos Velasco. Columna de Opinión.
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
