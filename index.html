@@ -1,228 +1,72 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WTJYJR229C"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-WTJYJR229C');
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcos Velasco | Escritor</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #0d0d0d; 
-            --card-bg: #161616; 
-            --text-color: #f2f2f2; 
-            --accent-blue: #3e5f8a; 
-            --accent-red: #8b0000;
-            --body-font: 'Inter', sans-serif;
-            --title-font: 'Playfair Display', serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: var(--body-font);
-            margin: 0;
-            line-height: 1.7;
-            font-weight: 300;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 30px;
-        }
-
-        header {
-            padding: 40px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            border-bottom: 1px solid #222;
-        }
-
-        .logo {
-            font-family: var(--title-font);
-            font-size: 1.8rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: var(--text-color);
-            text-decoration: none;
-        }
-
-        .main-nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 25px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .main-nav a {
-            text-decoration: none;
-            color: var(--text-color);
-            font-size: 0.85rem;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            opacity: 0.6;
-            transition: 0.3s;
-        }
-
-        .main-nav a:hover {
-            opacity: 1;
-            color: var(--accent-blue);
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            border: 1px solid var(--accent-blue);
-            color: var(--text-color);
-            text-decoration: none;
-            font-size: 0.8rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            transition: all 0.3s;
-            background: transparent;
-        }
-
-        .btn:hover {
-            background: var(--accent-blue);
-            color: white;
-        }
-
-        .hero {
-            padding: 60px 0 80px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-family: var(--title-font);
-            font-size: clamp(2.5rem, 8vw, 4rem);
-            margin: 0;
-            font-weight: 400;
-        }
-
-        .hero h1 span { color: var(--accent-blue); font-style: italic; }
-
-        .section-title {
-            font-family: var(--title-font);
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            color: var(--accent-blue);
-            margin: 60px 0 40px;
-            text-align: center;
-        }
-
-        .books-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 50px;
-            margin-bottom: 80px;
-        }
-
-        .book-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .book-cover-container {
-            width: 100%;
-            max-width: 260px;
-            aspect-ratio: 2/3;
-            background-color: var(--card-bg);
-            border: 1px solid #222;
-            overflow: hidden;
-            margin-bottom: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-
-        .book-cover-container img { width: 100%; height: 100%; object-fit: cover; }
-
-        footer {
-            padding: 60px 0;
-            text-align: center;
-            border-top: 1px solid #222;
-            font-size: 0.8rem;
-            opacity: 0.5;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcos Velasco | Escritor</title>
+  <meta name="description" content="Marcos Velasco, escritor español. Novelas filosóficas, relatos y columnas de opinión.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="container">
+  <div class="container">
     <header>
-        <a href="/" class="logo">M. Velasco</a>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="#novelas">Novelas</a></li>
-                <li><a href="#escritos">Escritos</a></li>
-                <li><a href="#opinion">Opinión</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <a href="/" style="font-weight:700; font-size:1.2rem;">M. Velasco</a>
+        <span style="margin: 0 0.5rem; opacity:0.5;">|</span>
+        <a href="/">Inicio</a>
+        <span style="margin: 0 0.5rem; opacity:0.5;">|</span>
+        <a href="#novelas">Novelas</a>
+        <span style="margin: 0 0.5rem; opacity:0.5;">|</span>
+        <a href="#escritos">Escritos</a>
+        <span style="margin: 0 0.5rem; opacity:0.5;">|</span>
+        <a href="#opinion">Opinión</a>
+      </nav>
     </header>
 
-    <section class="hero">
-        <h1>Marcos <span>Velasco</span></h1>
-        <p>Santander, España. Escritor atraído por las sombras del pensamiento.</p>
-    </section>
+    <main>
+      <section id="bio">
+        <h1>Marcos Velasco</h1>
+        <p style="color: var(--text-muted); font-size: 1.1rem;">Santander, España. Escritor atraído por las sombras del pensamiento.</p>
+      </section>
 
-    <div id="novelas" class="section-title">Novelas</div>
-    <section class="books-grid">
-       <div class="book-item">
-    <div class="book-cover-container">
-        <img src="https://i.postimg.cc/43hcM6CV/agelasto-portada-v-ELASCO.jpg" alt="Agelasto">
-    </div>
-    <h3>Agelasto</h3>
-    <span class="book-meta">Novela Corta | 2024</span>
-    
-    <div style="margin-top: 15px; display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 200px;">
-        <a href="agelasto.html" class="btn" style="background: var(--text-color); color: var(--bg-color); font-weight: 600;">Leer fragmento</a>
-        <a href="https://www.amazon.es/Agelasto-Marcos-Pérez-Velasco/dp/B0F4QNHPDY" target="_blank" class="btn" style="border-color: #555; font-size: 0.7rem; opacity: 0.8;">Comprar en Amazon</a>
-    </div>
+      <section id="novelas">
+        <h2>Novelas</h2>
+        <div class="novela-card">
+          <img src="https://i.postimg.cc/43hcM6CV/agelasto-portada-v-ELASCO.jpg" alt="Portada de Agelasto">
+          <h3>Agelasto</h3>
+          <a class="btn-comprar" href="https://www.amazon.es/Agelasto-Marcos-Pérez-Velasco/dp/B0F4QNHPDY" target="_blank">Comprar</a>
         </div>
-      <div class="book-item">
-    <div class="book-cover-container">
-        <img src="klara.jpg" alt="La sonrisa de Klara">
-    </div>
-    <h3>La sonrisa de Klara</h3>
-    <span class="book-meta">Novela | 2024</span>
-    
-    <div style="margin-top: 15px; display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 200px;">
-        <a href="la-sonrisa-de-klara.html" class="btn" style="background: var(--text-color); color: var(--bg-color); font-weight: 600;">Leer fragmento</a>
-        <a href="https://www.amazon.es/sonrisa-Klara-Marcos-Pérez-Velasco/dp/B0D949N1S3" target="_blank" class="btn" style="border-color: #555; font-size: 0.7rem; opacity: 0.8;">Comprar en Amazon</a>
-    </div>
-    <div id="escritos" class="section-title">Escritos</div>
-    <p style="text-align:center; opacity:0.6;">Próximamente relatos y diarios.</p>
+        <div class="novela-card">
+          <img src="https://i.postimg.cc/YSw2rYGg/portada.jpg" alt="Portada de La sonrisa de Klara">
+          <h3>La sonrisa de Klara</h3>
+          <a class="btn-comprar" href="#" target="_blank">Comprar</a>
+        </div>
+      </section>
 
-    <div id="opinion" class="section-title">Columna de opinión</div>
-    <section style="text-align: center; padding-bottom: 80px;">
-        <div style="max-width: 600px; margin: 0 auto; border: 1px solid #333; padding: 40px; background: #111;">
-            <span style="color: var(--accent-blue); font-size: 0.8rem;">27 MARZO 2026</span>
-            <h3 style="font-family: var(--title-font); font-size: 1.8rem; margin: 15px 0;">EL HORROR CONTEMPORÁNEO</h3>
-            <p style="opacity: 0.7; margin-bottom: 30px;">Reflexión sobre Noelia Castillo.</p>
-            <a href="horror-contemporaneo.html" class="btn" style="border-color: var(--accent-red); color: #ff5555;">Leer columna</a>
-        </div>
-    </section>
+      <section id="escritos">
+        <h2>Escritos</h2>
+        <p style="color: var(--text-muted);">Próximamente relatos y diarios.</p>
+      </section>
+
+      <section id="opinion" class="columna-preview">
+        <h2>Columna de opinión</h2>
+        <p style="font-size: 0.9rem; color: var(--text-muted);">27 MARZO 2026</p>
+        <h3>EL HORROR CONTEMPORÁNEO</h3>
+        <p>Reflexión sobre Noelia Castillo.</p>
+        <a href="horror-contemporaneo.html" style="text-decoration: underline;">Leer columna →</a>
+      </section>
+    </main>
 
     <footer>
-        &copy; 2026 Marcos Velasco.
+      <div class="contacto">
+        <a href="mailto:tu@email.com" title="Email">️</a>
+        <a href="https://x.com/tuusuario" target="_blank" title="X/Twitter">𝕏</a>
+        <a href="https://linkedin.com/in/tuusuario" target="_blank" title="LinkedIn">in</a>
+      </div>
+      <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted);">© 2026 Marcos Velasco.</p>
     </footer>
-</div>
+  </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
