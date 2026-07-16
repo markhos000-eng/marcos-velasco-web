@@ -43,3 +43,40 @@
       </section>
 
       <section id="relatos">
+        <h2>Relatos</h2>
+        <div class="card">
+          <h3>[Título del Libro de Relatos]</h3>
+          <p class="text-muted">Próximamente. Fragmentos de una realidad fracturada.</p>
+          <span class="btn btn-secondary" style="opacity: 0.5; cursor: default;">En preparación</span>
+        </div>
+      </section>
+
+      <section id="opinion" class="columna-preview">
+        <p class="text-muted" style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; margin-bottom: 0.5rem;">27 Marzo 2026</p>
+        <h3 style="font-family: var(--font-sans); font-weight: 500;">El horror contemporáneo: Noelia Castillo</h3>
+        <p class="text-muted">Reflexión sobre la deshumanización del sistema y la burocracia del mal.</p>
+        <a href="horror-contemporaneo.html" style="border-bottom: 1px solid var(--accent);">Leer columna completa →</a>
+      </section>
+
+      <!-- SECCIÓN NEWSLETTER (ÚNICA Y CORREGIDA) -->
+      <section class="newsletter">
+        <h2>Boletín de opinión</h2>
+        <p>Recibe mis columnas y ensayos directamente en tu correo. Sin ruido, solo texto.</p>
+        
+        <form class="newsletter-form" name="newsletter" method="POST" action="/gracias.html" data-netlify="true">
+          <input type="hidden" name="form-name" value="newsletter">
+          <input type="email" name="email" placeholder="tu@correo.com" required>
+          <button type="submit">Suscribirse</button>
+        </form>
+        
+        <p class="newsletter-note">Sin spam. Puedes darte de baja cuando quieras.</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>© 2026 Marcos Velasco. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
