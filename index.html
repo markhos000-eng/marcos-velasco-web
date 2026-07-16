@@ -4,79 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marcos Velasco | Escritor</title>
-  <meta name="description" content="Marcos Velasco, escritor español. Novelas filosóficas, relatos y columnas de opinión sobre la sociedad contemporánea.">
-  <meta property="og:title" content="Marcos Velasco | Escritor">
-  <meta property="og:description" content="Novelas, relatos y reflexión literaria.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://marcos-velasco.netlify.app/">
+  <meta name="description" content="Marcos Velasco. Novelas, relatos y columnas de opinión. Una radiografía crítica de la sociedad contemporánea.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <header>
-      <nav style="text-align: center;">
-        <a href="/" style="font-weight:700; font-size:1.2rem;">M. Velasco</a>
-        <span style="margin: 0 0.5rem; opacity:0.5;">|</span>
+      <nav>
+        <a href="/">Inicio</a>
         <a href="#novelas">Novelas</a>
-        <span style="margin: 0 0.5rem; opacity:0.5;">|</span>
-        <a href="#escritos">Escritos</a>
-        <span style="margin: 0 0.5rem; opacity:0.5;">|</span>
+        <a href="#relatos">Relatos</a>
         <a href="#opinion">Opinión</a>
       </nav>
     </header>
 
     <main>
-      <section id="bio" style="text-align: center; margin-bottom: 3rem;">
+      <section style="text-align: center; margin-bottom: 4rem;">
         <h1>Marcos Velasco</h1>
-        <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 500px; margin: 0 auto;">Santander, España. Escritor atraído por las sombras del pensamiento.</p>
+        <p class="text-muted">Santander, España. Escritor atraído por las sombras del pensamiento.</p>
       </section>
 
       <section id="novelas">
-        <h2 style="text-align: center;">Novelas</h2>
-        
-        <div class="novela-card">
+        <h2>Novelas</h2>
+        <div class="card">
           <img src="https://i.postimg.cc/43hcM6CV/agelasto-portada-v-ELASCO.jpg" alt="Portada de Agelasto">
           <h3>Agelasto</h3>
-          <div>
-            <a class="btn-leer" href="agelasto.html">Leer capítulo 1</a>
-            <a class="btn-comprar" href="https://www.amazon.es/Agelasto-Marcos-Pérez-Velasco/dp/B0F4QNHPDY" target="_blank">Comprar</a>
-          </div>
+          <p class="text-muted">Una radiografía del colapso social y la condición humana.</p>
+          <a href="agelasto.html" class="btn btn-secondary">Leer Capítulo 1</a>
+          <a href="https://www.amazon.es/Agelasto-Marcos-Pérez-Velasco/dp/B0F4QNHPDY" target="_blank" class="btn btn-primary">Comprar</a>
         </div>
-
-        <div class="novela-card">
+        <div class="card">
           <img src="https://i.postimg.cc/YSw2rYGg/portada.jpg" alt="Portada de La sonrisa de Klara">
           <h3>La sonrisa de Klara</h3>
-          <div>
-            <a class="btn-leer" href="la-sonrisa-de-klara.html">Leer prólogo</a>
-            <a class="btn-comprar" href="https://www.amazon.es/sonrisa-Klara-Marcos-Pérez-Velasco/dp/B0D949N1S3" target="_blank">Comprar</a>
-          </div>
+          <p class="text-muted">Un viaje por la memoria, la ciudad y los lazos que nos atan.</p>
+          <a href="la-sonrisa-de-klara.html" class="btn btn-secondary">Leer Prólogo</a>
+          <a href="https://www.amazon.es/sonrisa-Klara-Marcos-Pérez-Velasco/dp/B0D949N1S3" target="_blank" class="btn btn-primary">Comprar</a>
         </div>
       </section>
 
-      <section id="escritos" style="text-align: center; margin-top: 3rem;">
-        <h2>Escritos</h2>
-        <p style="color: var(--text-muted);">Próximamente relatos y diarios.</p>
+      <section id="relatos">
+        <h2>Relatos</h2>
+        <div class="card">
+          <h3>[Título del Libro de Relatos]</h3>
+          <p class="text-muted">Próximamente. Fragmentos de una realidad fracturada.</p>
+          <span class="btn btn-secondary" style="opacity: 0.5; cursor: default;">En preparación</span>
+        </div>
       </section>
 
       <section id="opinion" class="columna-preview">
-        <h2>Columna de opinión</h2>
-        <p style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">27 Marzo 2026</p>
-        <h3>El horror contemporáneo</h3>
-        <p style="color: var(--text-muted);">Reflexión sobre el caso Noelia Castillo y la deshumanización del sistema.</p>
-        <a href="Horror-contemporaneo.html" style="text-decoration: underline; font-weight: 600;">Leer columna completa →</a>
+        <p class="text-muted" style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; margin-bottom: 0.5rem;">27 Marzo 2026</p>
+        <h3 style="font-family: var(--font-sans); font-weight: 500;">El horror contemporáneo: Noelia Castillo</h3>
+        <p class="text-muted">Reflexión sobre la deshumanización del sistema y la burocracia del mal.</p>
+        <a href="horror-contemporaneo.html" style="border-bottom: 1px solid var(--accent);">Leer columna completa →</a>
       </section>
     </main>
 
     <footer>
-      <div class="contacto">
-        <a href="mailto:tu@email.com" title="Email de contacto">✉️</a>
-        <a href="https://x.com/tuusuario" target="_blank" title="X/Twitter">𝕏</a>
-        <a href="https://linkedin.com/in/tuusuario" target="_blank" title="LinkedIn">in</a>
-      </div>
-      <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-muted);">© 2026 Marcos Velasco. Todos los derechos reservados.</p>
+      <p>© 2026 Marcos Velasco. Todos los derechos reservados.</p>
     </footer>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
