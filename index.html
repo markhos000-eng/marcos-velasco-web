@@ -63,7 +63,11 @@
         <h2>Boletín de opinión</h2>
         <p>Recibe mis columnas y ensayos directamente en tu correo. Sin ruido, solo texto.</p>
         <!-- El atributo data-netlify="true" es la magia que hace que funcione sin servidor -->
-        <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true">
+<form class="newsletter-form" name="newsletter" method="POST" action="/gracias.html" data-netlify="true">
+  <input type="hidden" name="form-name" value="newsletter">
+  <input type="email" name="email" placeholder="tu@correo.com" required>
+  <button type="submit">Suscribirse</button>
+</form>
           <input type="email" name="email" placeholder="tu@correo.com" required>
           <button type="submit">Suscribirse</button>
         </form>
