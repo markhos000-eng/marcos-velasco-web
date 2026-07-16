@@ -1,4 +1,6 @@
 /* MINIMALISMO CLÍNICO-EXISTENCIAL */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@300;400;500&display=swap');
+
 :root {
   --bg: #111111;
   --card-bg: #1a1a1a;
@@ -21,40 +23,18 @@ body {
   padding: 2rem 1.5rem;
 }
 
-a {
-  color: var(--accent);
-  text-decoration: none;
-  transition: opacity 0.2s;
-}
+a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; }
 a:hover { opacity: 0.7; }
 
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
+.container { max-width: var(--max-width); margin: 0 auto; }
 
 /* Header */
-header {
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 3rem;
-  text-align: center;
-}
-nav a {
-  margin: 0 0.8rem;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: var(--text-muted);
-}
+header { padding-bottom: 2rem; border-bottom: 1px solid var(--border); margin-bottom: 3rem; text-align: center; }
+nav a { margin: 0 0.8rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); }
 nav a:hover { color: var(--accent); }
 
 /* Tipografía */
-h1, h2, h3 {
-  font-family: var(--font-serif);
-  color: var(--accent);
-  font-weight: 400;
-}
+h1, h2, h3 { font-family: var(--font-serif); color: var(--accent); font-weight: 400; }
 h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 0.5rem; letter-spacing: -0.5px; }
 h2 { font-size: 1.4rem; text-transform: uppercase; letter-spacing: 2px; margin: 3rem 0 1.5rem; text-align: center; }
 h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
@@ -63,63 +43,73 @@ p { margin-bottom: 1.5rem; color: #cccccc; }
 .text-muted { color: var(--text-muted); font-size: 0.95rem; }
 
 /* Tarjetas (Novelas / Relatos) */
-.card {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  padding: 2rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  transition: border-color 0.3s;
-}
+.card { background: var(--card-bg); border: 1px solid var(--border); padding: 2rem; margin-bottom: 1.5rem; text-align: center; transition: border-color 0.3s; }
 .card:hover { border-color: #555; }
-.card img {
-  max-width: 140px;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-}
+.card img { max-width: 140px; margin-bottom: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
 
 /* Botones */
-.btn {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
+.btn { display: inline-block; padding: 0.6rem 1.2rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin: 0.3rem; border: 1px solid var(--border); transition: all 0.2s; }
+.btn-primary { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+.btn-primary:hover { background: #ccc; border-color: #ccc; }
+.btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Columna Preview */
+.columna-preview { margin-top: 4rem; padding: 2rem; border-left: 2px solid var(--accent); background: rgba(255,255,255,0.02); }
+
+/* --- NEWSLETTER (NUEVO) --- */
+.newsletter {
+  margin-top: 5rem;
+  padding: 3rem 2rem;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+.newsletter h2 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.newsletter p {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  max-width: 450px;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+}
+.newsletter-form input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 1rem;
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  outline: none;
+}
+.newsletter-form input::placeholder { color: #555; }
+.newsletter-form button {
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  padding: 0 1.5rem;
+  font-family: var(--font-sans);
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin: 0.3rem;
-  border: 1px solid var(--border);
-  transition: all 0.2s;
+  cursor: pointer;
+  transition: background 0.2s;
 }
-.btn-primary {
-  background: var(--accent);
-  color: var(--bg);
-  border-color: var(--accent);
-}
-.btn-primary:hover {
-  background: #ccc;
-  border-color: #ccc;
-}
-.btn-secondary:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-/* Columna Preview */
-.columna-preview {
-  margin-top: 4rem;
-  padding: 2rem;
-  border-left: 2px solid var(--accent);
-  background: rgba(255,255,255,0.02);
-}
+.newsletter-form button:hover { background: #ccc; }
+.newsletter-note { font-size: 0.75rem; color: #444; margin-top: 1rem; }
 
 /* Footer */
-footer {
-  margin-top: 5rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-/* Fuentes externas */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@300;400;500&display=swap');
+footer { margin-top: 5rem; padding-top: 2rem; text-align: center; font-size: 0.8rem; color: var(--text-muted); }
